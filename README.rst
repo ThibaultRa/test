@@ -21,7 +21,7 @@ For more information including a list of features check the Scrapy homepage at:
 https://scrapy.org
 
 .. figure::  https://static.wixstatic.com/media/7e5ca4_e8c5873752d243559bf196835cd1924b~mv2.png/v1/fill/w_154,h_85,al_c,usm_0.66_1.00_0.01/7e5ca4_e8c5873752d243559bf196835cd1924b~mv2.png
-   :align:   center
+   :align:  center
 
 Requirements
 ============
@@ -53,6 +53,9 @@ Requirements
 Basic Commands
 =======
 
+It is assumed that the following commands are executed with
+``Crawling_largescale`` set as the current working directory.
+
 Launch a crawl
 ----------------
 
@@ -72,8 +75,9 @@ The following command
 
 will produce kpis on every document in the MongoDB database that stems from a
 starting url whose domain is either statoil.com or seadrill.com. The crawling
-rate will be displayed as
-:math:`\\frac{ number_of_documents_modified_in_db }{30 minutes}`.
+rate will be displayed as:
+.. math::
+    \\frac{ number_of_documents_modified_in_db }{30 minutes}
 
 Documentation
 =============
