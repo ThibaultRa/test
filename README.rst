@@ -77,8 +77,7 @@ will produce kpis on every document in the MongoDB database that stems from a
 starting url whose domain is either statoil.com or seadrill.com. The crawling
 rate will be displayed as:
 
-.. math::
-    \frac{ number_of_documents_modified_in_db }{30 minutes}
+$$\\frac{ number_of_documents_modified_in_db }{30 minutes}$$
 
 Documentation
 =============
