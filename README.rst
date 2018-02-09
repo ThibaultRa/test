@@ -75,9 +75,7 @@ The following command
 
 will produce kpis on every document in the MongoDB database that stems from a
 starting url whose domain is either statoil.com or seadrill.com. The crawling
-rate will be displayed as:
-
-$$\\frac{ number of documents modified in db }{30 minutes}$$
+rate will be displayed as (number of documents modified in db)/(30 minutes).
 
 Documentation
 =============
