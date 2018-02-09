@@ -13,9 +13,9 @@ Such technology will eventually help Spinergie to have a huge energy database
 associated with a search engine plugged upon.
 
 This project is build on Scrapy. It is a fast high-level web crawling and web
-scraping framework, used to crawl websites and extract structured data from
-their pages. It can be used for a wide range of purposes, from data mining to
-monitoring and automated testing.
+scraping framework writeen in Python and used to crawl websites and extract
+structured data from their pages. It can be used for a wide range of purposes,
+from data mining to monitoring and automated testing.
 
 For more information including a list of features check the Scrapy homepage at:
 https://scrapy.org
@@ -66,6 +66,21 @@ The following command
 will launch a crawl on websites whose id are 1 & 2 in the lsc_websites sql table
 on Rig Master.
 
+Onboard websites
+----------------
+
+The following command
+
+    python onboarding/phase1.py 1 2
+
+will perform the first stage of the onboarding of websites 1 and 2.
+
+Running
+
+    python onboarding/phase2.py 1 2
+
+will perform the second stage.
+
 Output KPIs
 ----------------
 
@@ -75,7 +90,7 @@ The following command
 
 will produce kpis on every document in the MongoDB database that stems from a
 starting url whose domain is either statoil.com or seadrill.com. The crawling
-rate will be displayed as (number of documents modified in db)/(30 minutes).
+rate will be displayed as *(number of documents modified in db)/(30 minutes)*.
 
 Documentation
 =============
